@@ -21,7 +21,7 @@ RUN apk --no-cache add ca-certificates && \
 #Java是基于GUN Standard C library(glibc)，Alpine是基于MUSL libc(mini libc)  ，需要安装gclib库
 #安装java基本依赖库
 RUN apk --update add --no-cache ca-certificates curl openssl binutils xz \
-    && GLIBC_VER="2.28-r0" \
+    && GLIBC_VER="2.29-r0" \
     && ALPINE_GLIBC_REPO="https://github.com/sgerrand/alpine-pkg-glibc/releases/download" \
     && GCC_LIBS_URL="https://archive.archlinux.org/packages/g/gcc-libs/gcc-libs-8.2.1%2B20180831-1-x86_64.pkg.tar.xz" \
     && GCC_LIBS_SHA256=e4b39fb1f5957c5aab5c2ce0c46e03d30426f3b94b9992b009d417ff2d56af4d \
