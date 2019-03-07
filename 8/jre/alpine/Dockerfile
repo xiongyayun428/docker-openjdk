@@ -23,4 +23,5 @@ RUN apk --no-cache add ca-certificates wget && \
     apk update && \
     apk add --no-cache ca-certificates && \
     apk add --no-cache curl bash tree tzdata && \
-    cp -rf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+    cp -rf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
+    rm -rf glibc-2.29-r0.apk
